@@ -1,0 +1,193 @@
+#开头加入以下一行
+# -*- coding:utf8 -*-
+
+#大小写敏感，包括import的库的名字
+
+
+
+#最小运行
+# -*- coding:utf8 -*-
+from Tkinter import *
+import xxx
+
+def functionname( parameters ):
+   execute111
+   return [expression]
+if __name__ == '__main__': #这一句就是入口
+    functionname
+
+
+
+
+#语句换行
+语句1
+语句2
+语句1;语句2;
+
+
+#行和缩进
+不使用大括号 {} 。缩进的空白数量是可变的，但是所有代码块语句必须包含相同的缩进空白数量，这个必须严格执行。
+
+#一行可分多行写
+两种情况
+情况一：使用斜杠（ \）将一行的语句分为多行显示
+情况二：语句中包含 [], {} 或 () 括号就不需要使用多行连接符
+
+#单双三引号
+单引号双引号相同，三引号可多行囊括其中
+paragraph = """这是一个段落。
+包含了多个语句"""
+
+#注释用#号
+python 中多行注释使用三个单引号(''')或三个双引号(""")。
+1.单行注释用#
+2.多行可用3个单引号或双引号囊括其中
+'''
+这是多行注释，使用单引号。
+这是多行注释，使用单引号。
+这是多行注释，使用单引号。
+'''
+
+"""
+这是多行注释，使用双引号。
+这是多行注释，使用双引号。
+这是多行注释，使用双引号。
+"""
+
+#打印print
+
+#变量复制不需要类型声明
+
+#Python有五个标准的数据类型：
+Numbers（数字）
+String（字符串）
+List（列表）
+Tuple（元组）
+Dictionary（字典）
+list就是可变数组
+tuple是不可变数组
+字典什么都能装，key可为不可变的任意数值，比如数字（非文本）
+
+
+#存在于多种操作场景的符号，+号，*号，in
+#存在于多种操作场景的模式，切片
+完整切片当只有一个“:”时，默认第三个参数step=1
+切片操作基本表达式：object[start_index（可省略）:end_index（不包含该index）（可省略）:step（正负决定方向）]
+关于切片的实际用法我保存了详细的案例文档
+如果没有记住用法我也可以编程手动实现
+！！彻底搞懂Python切片操作.note
+
+#字符串
+
+
+#列表 用中括号[]
+
+#元组 用括号()
+
+#字典
+dict = {}
+tinydict = {key:value,key:value}
+访问字典里的值
+dict['Name']
+如果用字典里没有的键访问数据，会输出错误如下：
+修改字典
+dict['Age'] = 8 # 更新
+dict['School'] = "RUNOOB" # 添加
+删除字典元素
+能删单一的元素也能清空字典，清空只需一项操作。
+显示删除一个字典用del命令，如下实例：
+del dict['Name']  # 删除键是'Name'的条目
+dict.clear()      # 清空字典所有条目
+del dict          # 删除字典
+但这会引发一个异常，因为用del后字典不再存在：
+字典键的特性
+字典值可以没有限制地取任何python对象，既可以是标准的对象，也可以是用户定义的，但键不行。
+两个重要的点需要记住：
+1）不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住，如下实例：
+2）键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行，如下实例：
+
+
+
+
+
+
+
+
+
+
+
+
+
+#比较运算符
+!=
+==
+
+
+#赋值运算符
+
+
+
+#位运算符
+
+
+#逻辑运算符
+a and b
+a or b
+not a
+
+#成员运算符
+in
+not in
+
+#身份运算符
+is
+is not
+
+注意is 与 == 区别
+
+#条件判断
+if condition:
+  execute1
+else:
+  execute2
+
+单行
+if ( var  == 100 ) : print
+
+
+#循环
+while
+1.
+while (condition)：
+
+  execute
+2.
+while condition:
+  execute
+else:
+  execute
+
+
+
+for
+1.
+for a in sequence:
+   execute
+2.
+for index in range(len(fruits)):
+   fruits[index]
+
+3.
+for a in b:
+   execute
+else:
+   execute
+
+
+#循环控制
+break， continue，pass（空语句）
+
+
+#随机数函数
+
+2019年11月18日17:17:41 笔记到一半
