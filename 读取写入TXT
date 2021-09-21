@@ -1,0 +1,49 @@
+#================读取
+python常用的读取文件函数有三种read()、readline()、readlines() 
+read()    一次性读全部内容
+一次性读取文本中全部的内容，以字符串的形式返回结果
+with open("test.txt", "r") as f:  # 打开文件
+    data = f.read()  # 读取文件
+    print(data)
+
+readline()    读取第一行内容
+with open("test.txt", "r") as f:
+    data = f.readline()
+    print(data)
+
+readlines()     列表
+读取文本所有内容，并且以数列的格式返回结果，一般配合for in使用
+with open("test.txt", "r") as f:
+    data = f.readlines()
+    print(data)
+readlines会读到换行符，可用如下方法去除：
+with open("test.txt", "r") as f:
+    for line in f.readlines():
+        line = line.strip('\n')  #去掉列表中每一个元素的换行符
+        print(line)
+
+
+#================写入txt文本
+写入txt文本
+with open("test.txt","w") as f:
+    f.write("这是个测试！")  # 自带文件关闭功能，不需要再写f.close()
+
+
+读写模式
+要了解文件读写模式，需要了解几种模式的区别，以及对应指针
+r :   读取文件，若文件不存在则会报错
+w:   写入文件，若文件不存在则会先创建再写入，会覆盖原文件
+a :   写入文件，若文件不存在则会先创建再写入，但不会覆盖原文件，而是追加在文件末尾
+rb,wb：  分别于r,w类似，但是用于读写二进制文件
+r+ :   可读、可写，文件不存在也会报错，写操作时会覆盖
+w+ :   可读，可写，文件不存在先创建，会覆盖
+a+ :  可读、可写，文件不存在先创建，不会覆盖，追加在末尾
+
+
+
+
+
+
+
+
+
